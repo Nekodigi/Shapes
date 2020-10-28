@@ -26,6 +26,9 @@ void draw(){
   println(solved);
   float x = -solved[0]/2;
   float y = -solved[1]/2;
+  PVector res = circle3p(ps[1], ps[2], ps[0]);
+  x = res.x;
+  y = res.y;
   float r = PVector.dist(ps[0], new PVector(x, y));
   ellipse(x, y, r*2, r*2);
   ellipse(ps[0].x, ps[0].y, 20, 20);
